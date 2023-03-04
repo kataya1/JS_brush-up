@@ -1,6 +1,5 @@
 // Types
 
-
 // String
 // Number
 // boolean
@@ -10,6 +9,7 @@
 
 // bigint
 // symbol 
+// object
 let foo = 42.321
 foo = Number.MIN_VALUE
 foo = Number.MAX_SAFE_INTEGER //  2^53 − 1
@@ -19,8 +19,7 @@ foo = -Infinity
 foo = "56"
 foo = false || true
 foo = undefined // undefined should not be redefined like this line
-foo = null
-// typeof null // Returns "object" (kind of a bug in JavaScript)
+foo = null // typeof null // Returns "object" (kind of a bug in JavaScript)
 foo = 391821n //bigint
 
 let symbol1 = Symbol('symbol');
@@ -113,6 +112,13 @@ var obj = { name: "Vivek", surname: "Bisht" }; // base by reference
 var obj2 = obj;
 obj["age"] = 21 // obj = obj2 = { name: "Vivek", surname: "Bisht", age: 21 }
 
+// 
+
+
+
+
+
+
 // ========
 // function 
 // ========
@@ -121,6 +127,7 @@ function foo(a, b = 3, ...c) {
     console.log(a, b, c)
 }
 foo(1, 2, 3, 4, 5) // a = 1, b = 2, c = [3, 4, 5]
+
     // anonymous function ( function expression rather than function declaration)
     (function (x) {
         return x * x
